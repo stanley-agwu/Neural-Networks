@@ -68,7 +68,7 @@ training_set_examples = [
   {"inputs": [0, 1, 0], "output": 0},
 ]
 
-# Train the neural network using 10, 000 iterations
+# Train the neural network using 100, 000 iterations
 neural_network.train(training_set_examples, number_of_iterations=100000)
 
 print("New weights after training: " + str(neural_network.weights))
@@ -83,7 +83,7 @@ prediction_1 = neural_network.think(new_situation_1)
 print("Prediction for new situation 1 [1, 1, 0]: " + str(prediction_1))
 
 prediction_2 = neural_network.think(new_situation_2)
-print("Prediction for new situation 1 [1, 0, 0]: " + str(prediction_2))
+print("Prediction for new situation 2 [1, 0, 0]: " + str(prediction_2))
 
 prediction_3 = neural_network.think(new_situation_3)
 print("Prediction for new situation 3 [0, 0, 0]: " + str(prediction_3))
